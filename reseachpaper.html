@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evolving Landscape of AI Bots: An Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #E5E7EB;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .card {
+            background-color: #1F2937;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(255, 78, 80, 0.2), 0 10px 10px -5px rgba(255, 78, 80, 0.1);
+        }
+        .kpi-number {
+            font-weight: 900;
+            color: #FF4E50;
+            line-height: 1;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2.5rem;
+            padding-left: 2rem;
+            border-left: 2px solid #4B5563;
+        }
+        .timeline-item:last-child {
+            border-left: 2px solid transparent;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -0.6rem;
+            top: 0;
+            height: 1rem;
+            width: 1rem;
+            border-radius: 9999px;
+            background-color: #FC913A;
+            border: 2px solid #1F2937;
+        }
+        .tech-stack-item {
+            border: 2px solid #4B5563;
+            transition: all 0.3s ease;
+        }
+        .tech-stack-item:hover {
+            border-color: #F9D423;
+            transform: scale(1.05);
+        }
+        .llm-button {
+            background-color: #FF4E50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .llm-button:hover {
+            background-color: #FC913A;
+        }
+        .llm-output {
+            background-color: #111827;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            min-height: 100px;
+            color: #E5E7EB;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-6xl font-black text-white leading-tight">The Evolving Landscape of <span class="text-[#FF4E50]">AI Bots</span></h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">From simple conversationalists to autonomous intelligent agents, AI is reshaping our world. This report visualizes their technology, impact, and future.</p>
+        </header>
+
+        <section id="hook" class="my-16">
+            <div class="card text-center p-8">
+                <h2 class="text-2xl font-bold text-gray-200 mb-2">A Tectonic Shift in the Global Workforce</h2>
+                <p class="text-gray-400 mb-6">Generative AI has the potential to automate tasks currently performed by millions, heralding a major economic transformation.</p>
+                <div class="kpi-number text-7xl md:text-9xl">300M</div>
+                <p class="mt-2 text-xl font-semibold text-gray-300">Equivalent Full-Time Jobs Could Be Automated by AI</p>
+            </div>
+        </section>
+
+        <section id="evolution" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Historical Evolution: <span class="text-[#FC913A]">A Journey Through Time</span></h2>
+            <div class="relative max-w-4xl mx-auto">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="text-sm font-semibold text-[#FC913A]">1966</p>
+                    <h3 class="text-xl font-bold mt-1">ELIZA - The First Chatbot</h3>
+                    <p class="text-gray-400 mt-2">MIT's Joseph Weizenbaum created ELIZA, a landmark program that simulated conversation using pattern matching, fooling some users into believing it was human.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="text-sm font-semibold text-[#FC913A]">1997</p>
+                    <h3 class="text-xl font-bold mt-1">Deep Blue Defeats Kasparov</h3>
+                    <p class="text-gray-400 mt-2">IBM's chess-playing computer defeated the world champion, showcasing AI's rapidly growing computational power to the public.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="text-sm font-semibold text-[#FC913A]">2011</p>
+                    <h3 class="text-xl font-bold mt-1">Watson Wins Jeopardy!</h3>
+                    <p class="text-gray-400 mt-2">IBM's question-answering system demonstrated advanced natural language understanding by competing against and winning on the popular quiz show.</p>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="text-sm font-semibold text-[#FC913A]">2022</p>
+                    <h3 class="text-xl font-bold mt-1">The Dawn of Mainstream Generative AI</h3>
+                    <p class="text-gray-400 mt-2">The public release of models like ChatGPT marked a watershed moment, making generative AI widely accessible and showcasing its ability to produce human-like text.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-12">The Engine of Intelligence: <span class="text-[#F9D423]">Core Technologies</span></h2>
+             <p class="text-center text-gray-400 max-w-2xl mx-auto mb-10">Modern AI bots are built on a stack of sophisticated technologies. From understanding human language to learning from data, each layer adds a new level of capability, culminating in today's powerful generative and multimodal systems.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="tech-stack-item p-6 rounded-lg">
+                    <div class="text-4xl mb-4">🗣️</div>
+                    <h3 class="text-xl font-bold text-white">Natural Language Processing (NLP)</h3>
+                    <p class="text-gray-400 mt-2">The foundation, enabling bots to understand, interpret, and generate human language.</p>
+                </div>
+                <div class="tech-stack-item p-6 rounded-lg">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold text-white">Machine & Deep Learning</h3>
+                    <p class="text-gray-400 mt-2">Algorithms and neural networks that allow bots to learn from data, recognize patterns, and improve over time.</p>
+                </div>
+                <div class="tech-stack-item p-6 rounded-lg">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold text-white">Large Language Models (LLMs)</h3>
+                    <p class="text-gray-400 mt-2">The cutting edge, enabling highly fluent, context-aware, and human-like conversational abilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="types" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-12">A Spectrum of Bots: <span class="text-[#FF4E50]">Classification & Capabilities</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="card">
+                     <h3 class="text-xl font-bold text-center mb-4">Chatbot Capability Tiers</h3>
+                     <p class="text-center text-gray-400 mb-6">Bots range from simple, scripted systems to highly advanced AI that can learn and adapt. The market is increasingly shifting towards more intelligent solutions.</p>
+                    <div class="chart-container">
+                        <canvas id="botTypesChart"></canvas>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-center mb-4">Dominant Use Cases in Business</h3>
+                    <p class="text-center text-gray-400 mb-6">While applicable everywhere, bots have found significant adoption in specific business functions, led by customer-facing roles.</p>
+                    <div class="chart-container">
+                        <canvas id="useCaseChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Transformative Impact: <span class="text-[#FC913A]">AI Across Industries</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-bold text-white">🛍️ E-commerce & Retail</h3>
+                    <p class="text-gray-400 my-4">AI bots act as personal shoppers, guiding users, offering recommendations, and streamlining checkout to boost sales.</p>
+                    <div class="text-center">
+                        <div class="kpi-number text-6xl">41%</div>
+                        <p class="mt-1 text-lg font-semibold text-gray-300">of consumers use conversational tools for purchases.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-white">❤️ Healthcare</h3>
+                    <p class="text-gray-400 my-4">From scheduling appointments to checking symptoms, bots are improving patient access and reducing administrative burdens.</p>
+                     <div class="text-center">
+                        <div class="kpi-number text-6xl">70%</div>
+                        <p class="mt-1 text-lg font-semibold text-gray-300">Reduction in patient wait times observed in some implementations.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-white">💰 Finance</h3>
+                    <p class="text-gray-400 my-4">AI enhances security through fraud detection and improves customer service with 24/7 support for account queries.</p>
+                     <div class="text-center">
+                        <div class="kpi-number text-6xl">90%</div>
+                        <p class="mt-1 text-lg font-semibold text-gray-300">Success rate for bank chatbots in resolving queries.</p>
+                    </div>
+                </div>
+                 <div class="card md:col-span-1 lg:col-span-3">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                             <h3 class="text-xl font-bold text-white">🏭 Manufacturing & Industry 4.0</h3>
+                            <p class="text-gray-400 my-4">In smart factories, AI is the brain behind advanced automation. It enables predictive maintenance to foresee equipment failures, optimizes supply chains for maximum efficiency, and facilitates safe human-robot collaboration, boosting productivity and reducing costly downtime.</p>
+                        </div>
+                        <div class="chart-container h-64 md:h-80">
+                            <canvas id="manufacturingImpactChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-12">Navigating the Hurdles: <span class="text-[#F9D423]">Challenges & Ethics</span></h2>
+             <p class="text-center text-gray-400 max-w-3xl mx-auto mb-10">The power of AI bots comes with significant responsibilities. Technical reliability, ethical integrity, and societal impact are critical areas of focus for responsible development and deployment.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-bold text-center mb-4">Key Ethical Considerations</h3>
+                    <p class="text-center text-gray-400 mb-6">Ensuring fairness, privacy, and accountability is paramount. These factors must be balanced to build trust and prevent harm.</p>
+                    <div class="chart-container">
+                        <canvas id="ethicalChallengesChart"></canvas>
+                    </div>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-bold text-center mb-4">The Societal Equation</h3>
+                     <p class="text-center text-gray-400 mb-6">AI's adoption creates a dual impact on society: while it automates jobs, it also has the potential to bridge the digital divide if implemented equitably.</p>
+                    <div class="space-y-6 pt-8">
+                        <div class="text-center">
+                             <p class="text-lg font-semibold text-gray-300">Job Displacement Risk</p>
+                             <p class="kpi-number text-5xl">25%</p>
+                             <p class="text-gray-400">of tasks in the US & Europe face high potential for automation.</p>
+                        </div>
+                         <div class="text-center">
+                             <p class="text-lg font-semibold text-gray-300">The Digital Divide</p>
+                             <p class="kpi-number text-5xl">40%</p>
+                             <p class="text-gray-400">of the world's population remains offline, limiting access to AI benefits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="llm-feature" class="my-16">
+            <h2 class="text-3xl font-bold text-center mb-12">✨ AI Bot Idea Generator ✨</h2>
+            <div class="card max-w-2xl mx-auto p-6">
+                <p class="text-gray-400 mb-4 text-center">Enter an industry or problem, and let Gemini suggest innovative AI bot applications!</p>
+                <div class="flex flex-col md:flex-row gap-4 mb-6">
+                    <input type="text" id="industryInput" placeholder="e.g., Healthcare, Customer Service, Education" class="flex-grow p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#FC913A]">
+                    <button id="generateIdeaBtn" class="llm-button flex-shrink-0">Generate Ideas ✨</button>
+                </div>
+                <div id="loadingIndicator" class="text-center text-gray-400 mb-4 hidden">Generating ideas...</div>
+                <div id="aiBotIdeasOutput" class="llm-output">
+                    Your AI bot ideas will appear here!
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center my-12 text-gray-500">
+            <p>Infographic based on the research paper "The Evolving Landscape of AI Bots: From Conversational Interfaces to Autonomous Intelligent Agents".</p>
+            <p>Visualizations created with Chart.js and Tailwind CSS. No SVG or Mermaid JS used.</p>
+        </footer>
+    </div>
+
+    <script>
+        const vibrantPalette = {
+            red: '#FF4E50',
+            orange: '#FC913A',
+            yellow: '#F9D423',
+            lightGreen: '#EDE574',
+            lighterGreen: '#E1F5C4',
+            gray: '#9CA3AF',
+            white: '#FFFFFF'
+        };
+
+        const chartDefaultOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: vibrantPalette.white,
+                        font: {
+                            size: 14
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        color: vibrantPalette.white,
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                y: {
+                    ticks: {
+                        color: vibrantPalette.white,
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    },
+                    beginAtZero: true
+                }
+            }
+        };
+
+        function wrapLabel(str, maxWidth) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + words[i].length + 1 < maxWidth) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new Chart(document.getElementById('botTypesChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Rule-Based', ['AI-Powered', '(ML-Based)'], ['LLM-Powered', '& Generative']],
+                    datasets: [{
+                        label: 'Adoption & Capability Score',
+                        data: [30, 65, 95],
+                        backgroundColor: [vibrantPalette.orange, vibrantPalette.yellow, vibrantPalette.red],
+                        borderColor: '#1F2937',
+                        borderWidth: 2
+                    }]
+                },
+                options: { ...chartDefaultOptions, indexAxis: 'y' }
+            });
+
+            new Chart(document.getElementById('useCaseChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Customer Support', 'Sales & Marketing', 'Internal Operations', 'Information Retrieval'],
+                    datasets: [{
+                        label: 'Use Case Distribution',
+                        data: [45, 25, 20, 10],
+                        backgroundColor: [vibrantPalette.red, vibrantPalette.orange, vibrantPalette.yellow, vibrantPalette.lightGreen],
+                        borderColor: '#1F2937',
+                        borderWidth: 4
+                    }]
+                },
+                options: { ...chartDefaultOptions, scales: {} }
+            });
+            
+            new Chart(document.getElementById('manufacturingImpactChart'), {
+                type: 'bar',
+                data: {
+                    labels: [['Predictive', 'Maintenance'], 'Quality Control', ['Supply Chain', 'Optimization'], ['Human-Robot', 'Collaboration']],
+                    datasets: [{
+                        label: 'Productivity Gains (%)',
+                        data: [40, 60, 55, 75],
+                        backgroundColor: [vibrantPalette.red, vibrantPalette.orange, vibrantPalette.yellow, vibrantPalette.lightGreen],
+                         borderColor: '#1F2937',
+                        borderWidth: 2
+                    }]
+                },
+                options: chartDefaultOptions
+            });
+
+            new Chart(document.getElementById('ethicalChallengesChart'), {
+                type: 'radar',
+                data: {
+                    labels: ['Bias in Algorithms', 'Data Privacy', 'Accountability', wrapLabel('Lack of Transparency (Black Box)', 16), 'Job Displacement'],
+                    datasets: [{
+                        label: 'Level of Concern',
+                        data: [8, 9, 7, 8, 9],
+                        backgroundColor: 'rgba(255, 78, 80, 0.4)',
+                        borderColor: vibrantPalette.red,
+                        pointBackgroundColor: vibrantPalette.red,
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: vibrantPalette.red
+                    }]
+                },
+                options: {
+                    ...chartDefaultOptions,
+                    scales: {
+                        r: {
+                            angleLines: { color: 'rgba(255, 255, 255, 0.2)' },
+                            grid: { color: 'rgba(255, 255, 255, 0.2)' },
+                            pointLabels: { 
+                                color: vibrantPalette.white,
+                                font: { size: 12 }
+                            },
+                            ticks: {
+                                color: vibrantPalette.white,
+                                backdropColor: 'transparent',
+                                stepSize: 2
+                            },
+                             min: 0,
+                             max: 10
+                        }
+                    }
+                }
+            });
+
+            // Gemini API Integration
+            const generateIdeaBtn = document.getElementById('generateIdeaBtn');
+            const industryInput = document.getElementById('industryInput');
+            const aiBotIdeasOutput = document.getElementById('aiBotIdeasOutput');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+
+            generateIdeaBtn.addEventListener('click', async () => {
+                const industry = industryInput.value.trim();
+                if (!industry) {
+                    aiBotIdeasOutput.textContent = "Please enter an industry or problem to generate ideas.";
+                    return;
+                }
+
+                loadingIndicator.classList.remove('hidden');
+                aiBotIdeasOutput.textContent = ''; // Clear previous output
+
+                const prompt = `Generate 3 innovative AI bot ideas for the following industry or problem: "${industry}". For each idea, provide a brief description of its function and potential benefits. Present the ideas as a numbered list.`;
+
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = ""
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        aiBotIdeasOutput.textContent = text;
+                    } else {
+                        aiBotIdeasOutput.textContent = "Failed to generate ideas. Please try again.";
+                    }
+                } catch (error) {
+                    console.error('Error calling Gemini API:', error);
+                    aiBotIdeasOutput.textContent = "An error occurred while generating ideas. Please check your network connection or try again later.";
+                } finally {
+                    loadingIndicator.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
